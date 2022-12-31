@@ -3,11 +3,11 @@ const Schema = mongoose.Schema
 const loginSchema = new Schema({
   account: {
     type: String,
-    required: True
+    required: true
   },
   password: {
     type: String,
-    required: True
+    required: true
   }
 })
 module.exports = mongoose.model('Login', loginSchema)
