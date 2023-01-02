@@ -1,6 +1,6 @@
 <div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
   <h1>Account Login</h1>
-  <form>
+  <form action="/login" method="POST">
     <div class="mb-3">
       <input type="email" placeholder="Email" name="email" class="form-control">
     </div>
@@ -9,4 +9,7 @@
     </div>
     <button type="submit" class="btn btn-primary">Sign in</button>
   </form>
+  {{#if error}}
+  <p class="text-danger">{{error}}</p>
+  {{/if}}
 </div>
